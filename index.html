@@ -30,6 +30,9 @@
                 </p>
             </div>
         </header>
+        <div class="hover-area" id="hover-area">
+            <span>Journey Board</span>
+          </div>
         
         <div class="slider2" id="slider2">
             <p>Journey Board<br></p>
@@ -41,9 +44,17 @@
           </div>
 
           <script>
+            var slider = document.getElementById('slider2');
+            
             document.getElementById('toggle-btn2').addEventListener('click', function() {
-              var slider = document.getElementById('slider2');
-              slider.classList.toggle('open');
+                slider.classList.toggle('open');
+            });
+                slider.addEventListener('mouseenter', () => {
+                slider.style.right = '300px';
+            });
+
+            slider.addEventListener('mouseleave', () => {
+                slider.style.right = '0px';
             });
           </script>
 

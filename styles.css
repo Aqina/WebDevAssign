@@ -211,8 +211,9 @@ header .submit-task:hover {
     font-size: 14px;
   }
 
-  .slider2:hover ~ .slider2.open {
+  .slider2 span:hover ~ .slider2.open {
     right: 0; /* Slide out on hover */
+    
   }
 
 
