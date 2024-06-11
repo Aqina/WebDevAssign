@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family:  'Segoe UI';;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
@@ -184,87 +184,197 @@ header .submit-task:hover {
     color: #007bff;
 }
 
-.thread h3 {
-    font-size: 1.2em;
-    margin: 10px;
 
+.thread {
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+    margin-top: 10px;
 }
 
-.thread .thread-inputs {
-    display: flex;
-    justify-content: space-between;
-    /* Group 1592 */
 
-    /* position: absolute; */
-    width: 199px;
-    height: 95px;
-    left: 773px;
-    top: 604px;
-
-
-}
-
-.thread .thread-inputs input {
-    width: 50%;
-    padding: 10px;
-    margin: 10px 0;
+.thread label[for="sub-thread-1"]{
+    font-family:  'Consolas';
+    margin-inline-start: 30px;
+    background-color: #ccc;
+    font-size: 13.5px;
+    margin-bottom: 15px;
+    padding-left: 11px;
+    padding-right: 97px;
+    padding-bottom: 10px;
+    
     border: 1px solid #ddd;
-    border-radius: 5px;
-
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 
 }
 
-.thread .icons {
-    display: flex;
-    justify-content: space-between;
-    margin: 10px 0;
-}
-
-.thread .icons img {
-    width: 25px;
-    height: 25px;
-}
-
-.thread .dropdowns {
-    display: flex;
-    justify-content: space-between;
-}
-
-.thread select {
-    width: 48%;
-    padding: 10px;
-    margin: 10px 0;
+.thread label[for="sub-thread-2"]{
+    font-family:  'Consolas';
+    margin-inline-start: 17px;
+    margin-inline-end: 29px;
+    background-color: #ccc;
+    font-size: 13px;
+    margin-bottom: 20px;
+    padding-left: 9px;
+    padding-right: 46px;
+    padding-bottom: 10px;
     border: 1px solid #ddd;
-    border-radius: 5px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.add-subthread {
-    display: block;
-    padding: 10px;
+.thread input[name="main"]  {
+    
+    margin-inline-start: 30px;
+    height: 100px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    font-size: 16px;
+    
+    transition: border-color 0.3s;
+}
+.thread input[name='main']::placeholder{
+    font-family:  'Consolas';
+    position: relative;
+    top:-40px;
+    padding-left: 9px;
+    font-size: 12px;
+}
+
+.thread input[name="main"]:focus {
+    border-color: #007bff;
+}
+.thread input[name="sub"]  {
+    margin-inline-start: 15px;
+    margin-inline-end: 30px;
+    height: 100px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    font-size: 16px;
+    
+    transition: border-color 0.3s;
+}
+.thread input[name='sub']::placeholder{
+    font-family:  'Consolas';
+    position: relative;
+    top:-40px;
+    padding-left: 9px;
+    font-size: 12px;
+}
+
+.thread input[name="sub"]:focus {
+    border-color: #007bff;
+}
+
+.select select[name="1"]{
+    margin-inline-start: 25px;
+    margin-top: 20px;
+    border-radius: 5px;
+    box-shadow: #666;
+    width: 90px;
+    font-size: 10px;
+    font-weight: bold;
+    font-family:  'Segoe UI';
+}
+.select select[name="2"]{
+    margin-top: 20px;
+    margin-inline-start: 10px;
+    border-radius: 5px;
+    box-shadow: #666;
+    width: 90px;
+    font-size: 10px;
+    font-weight: bold;
+    font-family:  'Segoe UI';
+}
+
+.select img[name="icon"]{
+    width: 100px;
+    position: relative;
+    top: 5px;
+    margin-inline-start: 120px;
+
+}
+
+.thread button {
+    margin-left: 20px;
+    padding: 8px;
     background-color: #007bff;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    margin: 10px 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.thread label[for="sub-thread-3"]{
+    margin-inline-start: 4px;
+    margin: 5px;
+    background-color: #ccc;
+    font-size: 16px;
+    margin-bottom: 40px;
+    padding-left: 10px;
+    padding-right: 294px;
+    padding-bottom: 10px;
+    border: 1px solid #ddd;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.thread textarea {
+    width: calc(100% - 20px);
+    margin-left: 5px;
+    height: 75px;
+    border: 1px solid #ccc;
+    border-radius: 9px;
+}
+.thread textarea::placeholder{
+    padding: 10px;
 }
 
 .add-subthread:hover {
     background-color: #0056b3;
 }
 
-textarea {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    resize: none;
+.method{
+    margin-left: 10px;
 }
 
+.method h3{
+    border: 1px solid #000;
+    padding: 5px;
+    border-radius: 5px;
+    width: 450px;
+}
+
+.article label{
+    padding: 20px;
+    font-family: Consolas;
+    font-size: 15px;
+}
+.article input{
+    margin-inline-start: 10px; 
+    margin-top: 10px;
+    margin-bottom:10px;
+    margin-inline-end: 1000px;
+    margin-inline-start: 10px; 
+    margin-top: 10px;
+    margin-bottom:10px;
+    margin-inline-end: 1000px;
+    width: calc(100% - 20px);
+    height: calc(100% - 20px) ;
+}
+
+
 .method .see-more {
+    position: relative;
+    
     display: block;
     margin: 10px 0;
+    margin-inline-start: 380px;
     padding: 10px;
     background-color: #007bff;
     color: white;
