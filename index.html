@@ -20,7 +20,8 @@
             </div>
             <div class="title-bar">
                 <h2>Technical Project Management</h2>
-                <img src="Component 58.png" alt="submit-task">
+                <button >Submit Task</button>
+                <!-- img src="Component 58.png" alt="submit-task" -->
             </div>
             <div class="description-box">
                 <h3 class="sub-header">Explore the world of management</h3>
@@ -29,6 +30,38 @@
                 </p>
             </div>
         </header>
+        
+        <div class="slider2" id="slider2">
+            <p>Journey Board<br></p>
+            <p1>text here</p1>
+            <span class="close-btn2" id="toggle-btn2">1</span>
+           
+            
+            
+          </div>
+
+          <script>
+            document.getElementById('toggle-btn2').addEventListener('click', function() {
+              var slider = document.getElementById('slider2');
+              slider.classList.toggle('open');
+            });
+          </script>
+
+        <div class="slider" id="slider">
+            <p>Hello<br>
+                This is where you can write something to notify people
+            </p>
+            <span class="close-btn" id="toggle-btn">&#10005;</span>
+            <span>Notice Board</span>
+            
+          </div>
+          
+          <script>
+            document.getElementById('toggle-btn').addEventListener('click', function() {
+              var slider = document.getElementById('slider');
+              slider.classList.toggle('open');
+            });
+          </script>
 
         <section class="content">
             <div class="card">
