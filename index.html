@@ -30,8 +30,23 @@
                 </p>
             </div>
         </header>
-        <div class="hover-area" id="hover-area">
-            <span>Journey Board</span>
+        <div class="slider" id="slider">
+            <p>Hello<br>
+                This is where you can write something to notify people
+            </p>
+            <span class="close-btn" id="toggle-btn">&#10005;</span>
+            <span>Notice Board</span>
+            
+          </div>
+          
+          <script>
+            document.getElementById('toggle-btn').addEventListener('click', function() {
+              var slider = document.getElementById('slider');
+              slider.classList.toggle('open');
+            });
+          </script>
+
+                  <div class="hover-area" id="hover-area">
           </div>
         
         <div class="slider2" id="slider2">
@@ -57,22 +72,7 @@
                 slider.style.right = '0px';
             });
           </script>
-
-        <div class="slider" id="slider">
-            <p>Hello<br>
-                This is where you can write something to notify people
-            </p>
-            <span class="close-btn" id="toggle-btn">&#10005;</span>
-            <span>Notice Board</span>
-            
-          </div>
-          
-          <script>
-            document.getElementById('toggle-btn').addEventListener('click', function() {
-              var slider = document.getElementById('slider');
-              slider.classList.toggle('open');
-            });
-          </script>
+        
 
         <section class="content">
             <div class="card">
@@ -106,7 +106,7 @@
                         <div class="select">
                             <img name="icon" src="Group 1588.png" alt="group-icon">
                             <select name="1">
-                                <option>Select Category</option>
+                                <option>Select Categ</option>
                                 <!-- Add more options as needed -->
                             </select>
                             <select name="2">
@@ -127,14 +127,21 @@
                     <h2>Structure your Pointers</h2>
                     
                 </div>
-                <p class="card-description">Write a 300 - 400 word article from your thread. Publish your understanding and showcase your understanding to the entire world.</p>
+                <p class="card-description">Description:Write a 300 - 400 word article from your thread. Publish your understanding and showcase your understanding to the entire world.</p>
                 <div class="article">
-                    <label>Title</label>
-                    <br>
-                    <input type="text" placeholder="Title">
-                    <label>Content</label>
-                    <br>
-                    <input type="text" placeholder="Content"></input>
+                    <h3>&nbsp;&nbsp;Title</h3>
+                    <textarea></textarea>
+                    <h3>&nbsp;&nbsp;Content</h3>
+                    <div class="box-div">
+                        <img src="Group 1739.svg" alt="box" class="box">
+                        <p class="box-text">File&nbsp;&nbsp;&nbsp; Edit &nbsp;&nbsp;&nbsp;View &nbsp;&nbsp;&nbsp;Insert
+                            &nbsp;&nbsp;&nbsp; Format&nbsp;&nbsp;&nbsp; Tools&nbsp;&nbsp;&nbsp; Table&nbsp;&nbsp;&nbsp;Help</p>
+                        <p class="Icon-img"><img src="Icon.png" style="padding-right: 5px;"> <img src="Icon1.png" style="margin-top: 40px;
+                            padding-top: 0px;
+                            padding-right: 10px;
+                            width: 17px;"> <img src="Icon2.png"></p>
+                    </div>
+                    <textarea class="Content"></textarea>
                 </div>
             </div>
 
