@@ -54,6 +54,19 @@ body {
     align-items: center;
 }
 
+.title-bar  button {
+    margin-left: 20px;
+    padding: 10px;
+    background-color: #0c67c9;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    
+    margin-bottom: 10px;
+}
+
 header h2 {
     margin: 10px 0;
     font-size: 2em;
@@ -154,6 +167,155 @@ header .submit-task:hover {
     border-radius: 15px 15px 0px 0px;
 
 }
+
+.slider2 {
+    position: fixed;
+    right:-5px; /* Start hidden */
+    top: 41%;
+    transform: translateY(-50%);
+    width: 60px;
+    background-color: #fff;
+    color: #000;
+    text-align: center;
+    border-radius: 10px 0px 0px 10px;
+    transition: left 0.3s ease; /* Smooth transition */
+  }
+
+ 
+
+  .slider2.open {
+    position: fixed;
+    right: 300px; /* Slide out */
+    top: 41%;
+    transform: translateY(-50%);
+    width: 60px;
+    background-color: #fff;
+    color: #000;
+    height:500px;
+    text-align: center;
+    border-radius: 10px 0px 0px 10px;
+    transition: left 0.3s ease;
+  }
+
+  .slider2 span {
+    border: 12px soild #fff;
+    position: relative;
+    margin-top:-300px;
+    margin-inline-start: 15px;
+    padding: 10px;
+    background-color: #0c67c9;
+    border: 1px solid #000;
+    border-radius: 10px 0 10px 0;
+    display: block;
+    float: left;
+    font-size: 14px;
+  }
+
+  .slider2 span:hover ~ .slider2.open {
+    right: 0; /* Slide out on hover */
+    
+  }
+
+
+  .slider2 p1{
+    background-color: #59aab4;
+    color: fff;
+    display: flex;
+    flex-direction: column;
+    position:relative;
+    width: 400px;
+    height: 500px;
+    margin-left:0px;
+    border-radius: 0 0 10px 10px;
+    margin-top: -16px;
+    padding-bottom: px;
+
+  }
+  .slider2 p{
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    position:relative;
+    width: 400px;
+    margin-left:px;
+    margin-top: 0px;
+    border-radius: 10px 0 10px 0;
+    padding-left: 10px;
+
+  }
+
+
+  .slider2 .close-btn2 {
+
+    display: block;
+    margin-bottom: 20px;
+    cursor: pointer;
+  }
+
+
+.slider {
+    position: fixed;
+    left: -50px; /* Start hidden */
+    top: 50%;
+    transform: translateY(-50%);
+    width: 60px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 0 10px 10px 0;
+    padding:5px;
+    transition: left 0.3s ease; /* Smooth transition */
+  }
+
+ 
+
+  .slider.open {
+    position: fixed;
+    left: 0px; /* Slide out */
+    top: 50%;
+    transform: translateY(-50%);
+    width: 60px;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    border-radius: 0 10px 10px 0;
+    padding-left: 10px;
+    padding-bottom: 0;;
+    padding-left: 200px;
+    transition: left 0.3s ease;
+  }
+
+  .slider p{
+    background-color: #000;
+    color: fff;
+    display: flex;
+    flex-direction: column;
+    float: left;
+    position:relative;
+    width: 235px;
+    height: px;
+    margin-left: -200px;
+    margin-top: 34px;
+
+  }
+
+
+  .slider span {
+    margin-top:0;
+    margin-left:40px;
+    display: block;
+    writing-mode: vertical-rl;
+    text-orientation:upright;
+    font-size: 14px;
+    letter-spacing: 2px;
+  }
+
+  .slider .close-btn {
+
+    display: block;
+    margin-bottom: 15px;
+    cursor: pointer;
+  }
 
 .card h2 {
     margin: auto;
